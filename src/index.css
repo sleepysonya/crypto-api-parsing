@@ -1,0 +1,130 @@
+.App {
+  height: auto;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 0%;
+  margin: 0%;
+}
+
+.logo {
+  height: 100px;
+  justify-content: center;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+  background-color: orange;
+  z-index: 20;
+  height: 100px;
+}
+
+
+.displayCrypto {
+  margin-top: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.coin {
+  width: 400px;
+  height: 300px;
+  background-color: rgb(36, 36, 36);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  margin: 20px;
+  text-align: center;
+  transition: opacity 300ms ease-in-out;
+}
+
+.pricechange {
+  display: flex;
+  width: 100%;
+  font-size: large;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.pricechange > div {
+  width: 33%;
+  text-align: center;
+}
+
+.displayCrypto:has(.coin:hover) .coin:not(:hover) {
+  opacity: 0.5;
+  
+}
+
+.green {
+  color: green;
+  display: inline-flex;
+}
+
+.red {
+  color: red;
+  display: inline-flex;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.downtrend, .uptrend {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 20px;
+  color: white;
+  height: 20px;
+}
+
+a > svg {
+  color: white;
+  height: 24px;
+  width: 24px;
+  margin: 0px 10px 10px 0px;
+  transition: color 300ms ease-in-out;
+  justify-content: center;
+}
+
+a > svg :hover {
+  color: rgb(112, 29, 122);
+}
+
+.price {
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.search {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 40px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0px;
+  font-family: monospace;
+}
+
